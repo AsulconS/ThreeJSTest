@@ -69,8 +69,9 @@
 
             // Luego, para la luna, uso una matriz que cree el dia de ayer
             // como producto de 3 matrices para girar con respecto a un pivot
-            var MTx = tierra.position.x;
-            var MTz = tierra.position.z;
+            // MTx y MTz son los pivotes
+            const MTx = tierra.position.x;
+            const MTz = tierra.position.z;
             const MT = new THREE.Matrix4();
             MT.set(
                  Math.cos(0.1), 0, Math.sin(0.1), MTx - MTx * Math.cos(0.1) - MTz * Math.sin(0.1),
