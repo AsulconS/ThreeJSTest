@@ -64,6 +64,7 @@
 
         var animate = function(){
             requestAnimationFrame(animate);
+            sol.geometry.applyMatrix4(RT);
             tierra.position.applyMatrix4(TT); // Movimiento de Traslacion
             tierra.geometry.applyMatrix4(RT); // Movimiento de Rotacion
 
